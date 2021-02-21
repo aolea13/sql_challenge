@@ -59,3 +59,10 @@ count(last_name) as "frequency"
 from employees
 group by last_name
 order by count(last_name) desc;
+
+-- Epilogue
+
+select employees.first_name, employees.last_name
+from employees
+where employees.emp_no = 499942;
+
